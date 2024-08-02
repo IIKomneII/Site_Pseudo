@@ -50,6 +50,10 @@ body {
     color: blueviolet;
 }
 
+a:hover {
+    color: red;
+}
+
 a:active {
     background-color: black;
     color: white;
@@ -71,4 +75,74 @@ a:active {
 
 #lorem2 input:disabled {
     background-color: lightcoral;
+}
+
+ul>:first-child {
+    color: grey;
+}
+
+li:first-of-type {
+    background-color: black;
+}
+
+ul>:last-child {
+    color: grey;
+}
+
+li:last-of-type {
+    background-color: black;
+}
+
+ul>:nth-child(2) {
+    color: white;
+}
+
+li:nth-last-child(2) {
+    background-color: black;
+}
+
+#lorem2 input:focus {
+    width: 250px;
+}
+
+#ranger:in-range {
+    background-color: greenyellow;
+}
+
+#invalid:invalid {
+    background-color: red;
+}
+
+p:lang(pt) {
+    background: yellow;
+}
+
+a:link {
+    background-color: blueviolet;
+}
+
+#yt:visited {
+    background-color: red;
+    color: white;
+}
+
+#valid:valid {
+    background-color: greenyellow;
+}
+
+#jump:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+
+:root {
+    background-color: azure;
+}
+
+:only-child {
+    color: darkblue;
+}
+
+p:only-of-type {
+    color: darkmagenta;
 }

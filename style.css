@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: block;
+}
+
+#lorem {
+    text-transform: lowercase;
+}
+
+#lorem::first-letter{
+    text-transform: uppercase;
+    color: red;
+    font-size: 22px;
+}
+
+#lorem p::first-line {
+    color: blue;
+    font-style: italic;
+}
+
+#lorem p::before {
+    content: 'Reprehenderit';
+    font-size: 22px;
+    color: green;
+}
+
+#lorem p::after {
+    content: 'magni.';
+    font-size: 22px;
+    color: green;
+}
+
+#lorem ul li::marker {
+    content: '♠';
+    font-size: 16px;
+    color: blueviolet;
+}

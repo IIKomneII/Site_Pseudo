@@ -6,8 +6,19 @@ body {
     display: block;
 }
 
+::selection {
+    background-color: aqua;
+    color: red;
+}
+
 #lorem {
     text-transform: lowercase;
+}
+
+#lorem p:empty {
+    width: 100px;
+    height: 20px;
+    background-color: gray;
 }
 
 #lorem::first-letter{
@@ -16,25 +27,48 @@ body {
     font-size: 22px;
 }
 
-#lorem p::first-line {
+#lorem2::first-line {
     color: blue;
     font-style: italic;
 }
 
-#lorem p::before {
+#lorem2::before {
     content: 'Reprehenderit';
     font-size: 22px;
     color: green;
 }
 
-#lorem p::after {
+#lorem2::after {
     content: 'magni.';
     font-size: 22px;
     color: green;
 }
 
-#lorem ul li::marker {
+#ace li::marker {
     content: '♠';
     font-size: 16px;
     color: blueviolet;
+}
+
+a:active {
+    background-color: black;
+    color: white;
+}
+
+#check {
+    list-style: none;
+    content: none;
+}
+
+#check input:checked {
+    height: 50px;
+    width: 50px;
+}
+
+#lorem2 input:enabled {
+    background-color: lightskyblue;
+}
+
+#lorem2 input:disabled {
+    background-color: lightcoral;
 }
